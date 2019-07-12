@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize; 
+  }
+
+  p, ul {
+    font-size: 16px;
+    color: #696969;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  #more, #more1, #more2 {
+    display: none;
+  }
+  
+
+  .Readmore {
+    color: #faba00;
+  }
+ 
+  
