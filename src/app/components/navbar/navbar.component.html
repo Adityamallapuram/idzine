@@ -72,15 +72,23 @@
 <nav class="navbar navbar-light bg-white navbar-expand-lg">
   <div class="container-fluid px-0">
     <div class="row w-100">
+      <button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"
+        (click)="isShown = !isShown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="col-2"> <a class="navbar-brand " routerLink="">
+          <img src="assets/theme/img/logo.png" routerLink="" alt=""></a>
 
-      <div class="col-2"> <a class="navbar-brand " routerLink=""><img src="assets/theme/img/logo.png" alt=""></a>
       </div>
 
-      <div class="col-8 ">
-        <div class="collapse justify-content-end navbar-collapse pull-right" [ngClass]="{ 'show': isShown }"
-          id="navbarTogglerDemo03">
+
+      <div class="col-10 ">
+
+        <div class="collapse  navbar-collapse" [ngClass]="{ 'show': isShown }" id="navbarTogglerDemo03">
+
           <ul class="navbar-nav mt-2 mt-lg-0">
-            <li class="nav-item active">
+            <li class="nav-item ">
               <a class="nav-link" routerLink="" (click)="isShown = false">Home</a>
             </li>
             <li class="nav-item">
@@ -94,11 +102,8 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item nav-link" routerLink="/kitchen">Modular Kitchen</a>
-                <div class="dropdown-divider"></div>
                 <a class="dropdown-item nav-link" routerLink="/wardrobe">Wardrobes</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" routerLink="/living">Living room</a>
-                <div class="dropdown-divider"></div>
+                <a class="dropdown-item nav-link" routerLink="/living">Living room</a>
                 <a class="dropdown-item nav-link" routerLink="/bedroom">Bed room</a>
               </div>
             </li>
@@ -107,14 +112,13 @@
             </li>
           </ul>
         </div>
+
       </div>
-      <div class="col-2 ">
-        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"
-          (click)="isShown = !isShown">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
+
+
     </div>
+
+
+
   </div>
 </nav>

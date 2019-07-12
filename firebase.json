@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/idzine",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
