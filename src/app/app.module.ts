@@ -31,6 +31,7 @@ import { WardrobeComponent } from './components/gallery/wardrobe/wardrobe.compon
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { WhatwedoComponent } from './components/whatwedo/whatwedo.component';
+import { EnquiryFormComponent } from './components/enquiry-form/enquiry-form.component';
 
 
 
@@ -49,7 +50,8 @@ import { WhatwedoComponent } from './components/whatwedo/whatwedo.component';
     LivingComponent,
     BedroomComponent,
     WardrobeComponent,
-    WhatwedoComponent
+    WhatwedoComponent,
+    EnquiryFormComponent
   ],
   imports: [
     BrowserModule,
