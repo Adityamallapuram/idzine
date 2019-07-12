@@ -1,16 +1,16 @@
-<header class="header_area ">
+<!-- <header class="header_area ">
 
   <div class="main_menu" id="mainNav">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container ">
         <a class="navbar-brand logo_h " routerLink=""><img src="assets/theme/img/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"
+          (click)="isShown = !isShown">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse offset " id="navbarSupportedContent">
+        <div class="collapse justify-content-end navbar-collapse" [ngClass]="{ 'show': isShown }"
+          id="navbarTogglerDemo03">
           <ul class="nav navbar-nav menu_nav ml-auto pull-right">
             <li class="nav-item active"><a class="nav-link" routerLink="">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#services">Our services</a></li>
@@ -32,7 +32,7 @@
       </div>
     </nav>
   </div>
-</header>
+</header> -->
 
 
 
@@ -67,3 +67,54 @@
     </div>
   </div>
 </nav> -->
+
+
+<nav class="navbar navbar-light bg-white navbar-expand-lg">
+  <div class="container-fluid px-0">
+    <div class="row w-100">
+
+      <div class="col-2"> <a class="navbar-brand " routerLink=""><img src="assets/theme/img/logo.png" alt=""></a>
+      </div>
+
+      <div class="col-8 ">
+        <div class="collapse justify-content-end navbar-collapse pull-right" [ngClass]="{ 'show': isShown }"
+          id="navbarTogglerDemo03">
+          <ul class="navbar-nav mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="" (click)="isShown = false">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services" (click)="isShown = false">Services</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" routerLink="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Design gallery
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item nav-link" routerLink="/kitchen">Modular Kitchen</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item nav-link" routerLink="/wardrobe">Wardrobes</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" routerLink="/living">Living room</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item nav-link" routerLink="/bedroom">Bed room</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactus" (click)="isShown = false">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2 ">
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"
+          (click)="isShown = !isShown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
