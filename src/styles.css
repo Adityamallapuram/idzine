@@ -1,2 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'bootstrap/dist/css/bootstrap.min.css';
+/* @import 'jquery/dist/jquery.min.js'; */
+/* @import 'validate/validate.js'; */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+body {
+    font-family: 'Open Sans', sans-serif;
+}

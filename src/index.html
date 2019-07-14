@@ -50,6 +50,12 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATZWux2y9Q745J5kPXQ4d5MoY8_f5n96Y"></script>
   <script src="assets/theme/js/gmaps.min.js"></script>
   <script src="assets/theme/js/theme.js"></script>
+
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript" src="assets/form-submission-handler.js"></script>
+  <!-- END -->
+
 </body>
 
 
@@ -136,5 +142,25 @@
     }
   }
 </script>
+
+<!-- <script>
+
+  function submitForm() {
+    document.getElementById('enquiryForm').submit();
+  }
+
+  function succes() {
+    document.getElementById('success');
+  }
+
+
+</script> -->
+<!-- <script>
+
+  $('#enquiryForm').on('submit', function (e) {
+    $('#success').modal('show');
+    e.preventDefault();
+  });
+</script> -->
 
 </html>

@@ -1,61 +1,80 @@
-<!--================Contact Area =================-->
-<section class="contact_area p_120">
-    <div class="container">
-        <div id="mapBox" class="mapBox" data-lat="40.701083" data-lon="-74.1522848" data-zoom="13"
-            data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia." data-mlat="40.701083"
-            data-mlon="-74.1522848">
-        </div>
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="contact_info">
-                    <div class="info_item">
-                        <i class="lnr lnr-home"></i>
-                        <h6>California, United States</h6>
-                        <p>Santa monica bullevard</p>
+<div class="row">
+    <div class="col-md-10">
+
+        <form name="contentForm" enctype="multipart/form-data" method="" action="" role="form" data-toggle="validator"
+            novalidate="true">
+            <div class="form schedule-assessment">
+                <div class="row margin-top-l">
+                    <div class="form-group ">
+                        <label for="full_name" class="sr-only">Full Name: </label>
+                        <input name="full_name" id="full_name" placeholder="Full name" type="text" value=""
+                            required="required" name="entry.2005620554" data-error="Please enter your full name.">
+                        <div class="help-block with-errors"></div>
+                    </div><!-- close col-->
+                    <div class="form-group ">
+                        <label for="phone_number" class="sr-only">Phone Number: </label>
+                        <input name="phone_number" id="phone_number" name="entry.1045781291" placeholder="Phone number"
+                            type="text" value="" required="required" data-error="Please enter your phone number">
+                        <div class="help-block with-errors"></div>
+                    </div><!-- close col-->
+
+
+
+                    <div class="form-group ">
+                        <label for="email" class="sr-only">Email Address: </label>
+                        <input name="email" id="email" placeholder="Email Address" name="entry.1166974658" type="email"
+                            value="" required="required" data-error="Please enter a valid email.">
+                        <div class="help-block with-errors"></div>
                     </div>
-                    <div class="info_item">
-                        <i class="lnr lnr-phone-handset"></i>
-                        <h6><a href="#">00 (440) 9865 562</a></h6>
-                        <p>Mon to Fri 9am to 6 pm</p>
+                    <!-- <div class="form-group ">
+                                    <label for="select_options" class="sr-only">What service are your interested in?
+                                    </label>
+                                    <select name="select_options" required="required"
+                                        data-error="Please select one option.">
+                                        <option value="">What service are you interested in?</option>
+                                        <option value="Web Design">Web Design</option>
+                                        <option value="Web Support">Web Support</option>
+                                        <option value="Digital Marketing">Digital Marketing</option>
+                                        <option value="CMS Integration">CMS Integration</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div> -->
+
+
+                    <div class="form-group ">
+                        <label for="city" class="sr-only">City: </label>
+                        <input name="city" id="city" placeholder="Yout current city" name="entry.1065046570"
+                            type="email" value="" required="required" data-error="Please enter current city .">
+                        <div class="help-block with-errors"></div>
                     </div>
-                    <div class="info_item">
-                        <i class="lnr lnr-envelope"></i>
-                        <h6><a href="#">info@idzine.com</a></h6>
-                        <p>Send us your query anytime!</p>
+
+
+                    <!-- <div class="row">
+                                <div class="form-group col-md-12">
+                                    <div class="text-center">
+                                        <label>Do you want to receive a digital brochure?</label>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="digital_brochure" value="yes" required>
+                                                Yes, absolutely!
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="digital_brochure" value="no" required>
+                                                No thanks.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                    <div class="form-group text-center">
+                        <input class="submit center-block btn btn-primary" value="Submit" type="submit">
                     </div>
                 </div>
+
             </div>
-            <div class="col-lg-9">
-                <form class="row contact_form" action="../../../assets/theme/contact_process.php" method="post"
-                    id="contactForm" novalidate="novalidate">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="email" name="email"
-                                placeholder="Your email address">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="subject" name="subject "
-                                placeholder="Your phone number">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="city" name="city " placeholder="Your City">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <textarea class="form-control" name="message" id="message" rows="1"
-                                placeholder="message"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-12 text-right">
-                        <button type="submit" value="submit" class="btn submit_btn">Send Message</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+        </form>
     </div>
-</section>
-<!--================Contact Area =================-->
+</div>
